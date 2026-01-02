@@ -1,0 +1,51 @@
+{
+  "name": "@adaglobal/whatsapp-messaging-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "mcpName": "io.github.adaglobal/messaging",
+  "description": "MCP server for sending WhatsApp messages via ADA BMP API",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaglobal/whatsapp-messaging-mcp.git"
+  },
+  "bin": {
+    "whatsapp-messaging-mcp": "./dist/stdio-server.js"
+  },
+  "main": "dist/stdio-server.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/stdio-server.js",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=18.19.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.2",
+    "undici": "^6.19.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@typescript-eslint/eslint-plugin": "^8.9.0",
+    "@typescript-eslint/parser": "^8.9.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "nock": "^13.5.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
+  }
+}
