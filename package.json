@@ -1,16 +1,16 @@
 {
   "name": "@adaglobal/whatsapp-messaging-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "mcpName": "io.github.adaglobal/messaging",
   "description": "MCP server for sending WhatsApp messages via ADA BMP API",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adaglobal/whatsapp-messaging-mcp.git"
+    "url": "git+https://github.com/thecolabpoint/whatsapp-messaging-mcp.git"
   },
   "bin": {
-    "whatsapp-messaging-mcp": "./dist/stdio-server.js"
+    "whatsapp-messaging-mcp": "dist/stdio-server.js"
   },
   "main": "dist/stdio-server.js",
   "files": [
